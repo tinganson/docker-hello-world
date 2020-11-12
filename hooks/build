@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ENVIRONMENT=$(echo $DOCKER_TAG | cut -d "-"-f1)
+ENVIRONMENT=$(echo $DOCKER_TAG | cut -d "-" -f1)
 if [ $DOCKER_TAG == "latest" ]
 then
   echo -e "building image using PORT: $PORT"
